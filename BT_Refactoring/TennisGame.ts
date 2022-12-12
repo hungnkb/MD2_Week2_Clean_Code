@@ -78,7 +78,9 @@ export class TennisGame {
         secondPlayerName: string,
         firstPlayerScore: number,
         secondPlayerScore: number) {
+
         let scoreDifference = this.scoreDifference(firstPlayerScore, secondPlayerScore)
+
         switch (scoreDifference) {
             case 0:
                 this.scoreEqual(firstPlayerScore, secondPlayerScore);
