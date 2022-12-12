@@ -2,11 +2,13 @@ export class FizzBuzz {
     message: string;
 
     constructor(n: number) {
-        if (n % 3 == 0 && n % 5 == 0) {
+        let isFizz = n % 5 == 0;
+        let isBuzz = n % 3 == 0;
+        if (isFizz && isBuzz) {
             this.message = 'FizzBuzz';
-        } else if (n % 5 == 0) {
+        } else if (isFizz) {
             this.message = 'Fizz';
-        } else if(n % 3 == 0) {
+        } else if(isBuzz) {
             this.message = 'Buzz';
         } else {
             this.message = n + ''
